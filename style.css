@@ -23,7 +23,7 @@ main {
     margin: auto;
     overflow: hidden;
     border-radius: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
 }
 article.first {
     background-color: var(--Bright-orange);
@@ -74,9 +74,12 @@ p {
 }
 .description {
     padding: 10px 0 50px 0;
+    opacity: .8;
 }
-@media (max-width: 600px) {
+
+@media (max-width: 800px) {
     main {
+        margin: 20px 0;
         grid-template: none;
     }
 }
