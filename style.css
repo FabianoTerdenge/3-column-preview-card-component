@@ -28,26 +28,34 @@ main {
 article.first {
     background-color: var(--Bright-orange);
 }
+article.first .button{
+    color: var(--Bright-orange);
+}
 article.second {
     background-color: var(--Dark-cyan);
+}
+article.second .button{
+    color: var(--Dark-cyan);
 }
 article.third {
     background-color: var(--Very-dark-cyan);
 }
+article.third .button{
+    color: var(--Very-dark-cyan);
+}
 .headline {
-    font-size: 24px;
+    font-size: 2.25rem;
     color: var(--Very-light-gray-background-headings-buttons);
     padding: 20px 0;
     font-family: "Big Shoulders Display";
 }
 article {
-    padding: 20px;
+    padding: 40px;
     grid-template-rows: auto auto 1fr auto;
     display: grid;
 }
 .button {
     background-color: var(--Transparent-white-paragraphs);
-    color: inherit;
     border-radius: 20px;
     min-width: 100px;
     padding: 10px;
@@ -62,10 +70,10 @@ p {
     background-color: transparent;
     border: 2px solid var(--Transparent-white-paragraphs);
     cursor: pointer;
-    color: var(--Transparent-white-paragraphs);
+    color: var(--Transparent-white-paragraphs)!important;
 }
 .description {
-    padding: 30px 0 50px 0;
+    padding: 10px 0 50px 0;
 }
 @media (max-width: 600px) {
     main {
